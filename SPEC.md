@@ -363,3 +363,20 @@ fittrack-pro/
 - [ ] API responses < 1 second
 - [ ] No console errors
 - [ ] Smooth scrolling and interactions
+# frontend/.env.production
+VITE_API_URL=https://fittrack-pro-api.onrender.com
+Deploy to Vercel
+Go to https://vercel.com → Sign up → "Add New..." → "Project"
+Import your GitHub repo
+Settings:
+Framework Preset: Vite
+Root Directory: frontend
+Build Command: npm run build
+Output Directory: dist
+Add Environment Variable:
+VITE_API_URL = https://fittrack-pro-api.onrender.com
+Click "Deploy"
+3. Update MongoDB Atlas
+Go to MongoDB Atlas → Network Access
+Add IP Address → "Allow Access from Anywhere" (0.0.0.0/0)
+This allows Render/Vercel to connect
