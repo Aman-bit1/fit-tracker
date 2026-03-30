@@ -7,7 +7,7 @@ node_modules/
 .env.*.local
 
 # Build output
-dist/
+frontend/dist/
 build/
 
 # IDE
